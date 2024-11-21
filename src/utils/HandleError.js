@@ -19,3 +19,5 @@ class HandleError extends Error {
         }
     }
 }
+
+export default HandleError

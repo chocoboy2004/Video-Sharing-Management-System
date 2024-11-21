@@ -1,12 +1,12 @@
 import mongoose, { Schema } from "mongoose";
 
 const shareSchema = new Schema({
-    viewedVideo: {
+    sharedVideo: {
         type: Schema.Types.ObjectId,
         ref: "Video",
         required: true
     },
-    viewedBy: {
+    sharedBy: {
         type: Schema.Types.ObjectId,
         ref: "User",
         required: true
