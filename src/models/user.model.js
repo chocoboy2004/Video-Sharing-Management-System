@@ -20,12 +20,14 @@ const userSchema = new Schema({
         required: [true, "Email is required!"],
         trim: true,
         lowercase: true,
-        index: true
+        index: true,
+        unique: true
     },
     phoneNo: {
         type: Number,
         required: [true, "Phone number is required!"],
-        index: true
+        index: true,
+        unique: true
     },
     profilePic: {
         type: String // cloudinary URL
